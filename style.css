@@ -133,13 +133,15 @@ body{
 }
 
 .features{
+    display: flex;
+    flex-direction: column;
     position: relative;
     background: no-repeat center -70% url("images/bg-pattern-circles.svg"),linear-gradient(hsl(237, 17%, 21%),hsl(237, 23%, 32%));
     background-size: contain;
     text-align: center;
     margin-top: 45%;
     color: white;
-    font-family: "Overpass";
+    font-family: "Overpass", sans-serif;
     border-radius: 0 80px 0;
     padding: 1.5rem;
 }
