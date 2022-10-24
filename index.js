@@ -1,6 +1,14 @@
+const $ = document.querySelector.bind(document);
+const hamburger = $(".hamburger");
 
-const hamberger = document.querySelector(".hamburger");
+hamburger.addEventListener("click",()=>{
+    hamburger.classList.toggle('open');
+    const dialog = $('dialog.modal');
+    dialog.showModal();
+});
 
-hamberger.addEventListener("click",()=>{
-    hamberger.classList.toggle('open');
+const buttonClose = $('.close-button');
+buttonClose.addEventListener('click', ()=> {
+    const dialog = buttonClose.closest('dialog');
+    dialog.close();
 })

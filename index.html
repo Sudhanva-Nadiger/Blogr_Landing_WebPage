@@ -24,9 +24,13 @@
     <header class="head">
         <nav class="navbar">
             <img src="./images/logo.svg" alt="LOGO">
-            <div class="hamburger open"></div>
+            <a href="#" class="hamburger">
+                <img src="images/icon-hamburger.svg" alt="menu" />
+            </a>
         </nav>
 
+        <div class="modal-container">
+        <dialog class="modal">
         <div class="mobile-menu">
             <div class="link-wrapper">
                 <details>
@@ -62,7 +66,11 @@
                 <button class="btn outlined-menu">Login</button>
                 <button class="btn filled-menu">Sign up</button>
             </div>
+            <a class="close-button" href="#">
+                <img src="images/icon-close.svg" alt="close" />
+            </a>
         </div>
+        </dialog>
 
         <div class="content" id="content">
             <h1>
@@ -75,6 +83,7 @@
                 <button class="btn filled">Start for Free</button>
                 <button class="btn outlined">Learn More</button>
             </div>
+        </div>
         </div>
 
   </header>
