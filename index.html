@@ -2,19 +2,19 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- displays site properly based on user's device -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="menu.css">
     <link href="https://fonts.googleapis.com/css2?family=Sacramento&family=Ubuntu:wght@400;500;700&display=swap"
         rel="stylesheet">
     <link
         href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Sacramento&family=Ubuntu:wght@400;500;700&display=swap"
         rel="stylesheet">
     <title>Frontend Mentor | [Blogr]</title>
-
     <script src="index.js" defer></script>
 </head>
 
@@ -22,12 +22,56 @@
 
     <header class="head">
         <nav class="navbar">
-            <img src="images/logo.svg" alt="LOGO">
-            <div class="hamburger">
-                <img src="images/icon-hamburger.svg" alt="ham-menu">
-            </div>
+            <img src="./images/logo.svg" alt="LOGO">
+            <a href="#" class="hamburger">
+                <img src="images/icon-hamburger.svg" alt="menu" />
+            </a>
         </nav>
-        <div class="content">
+
+        <div class="modal-container">
+        <dialog class="modal">
+        <div class="mobile-menu">
+            <div class="link-wrapper">
+                <details>
+                    <summary>Product</summary>
+                    <ul>
+                        <li>Overview</li>
+                        <li>Pricing</li>
+                        <li>Marketplace</li>
+                        <li>Features</li>
+                        <li>Integrations</li>
+                    </ul>
+                </details>
+                <details>
+                    <summary>Company</summary>
+                    <ul>
+                        <li>About</li>
+                        <li>Team</li>
+                        <li>Blog</li>
+                        <li>Career</li>
+                    </ul>
+                </details>
+                <details>
+                    <summary>Connect</summary>
+                    <ul>
+                        <li>Contact</li>
+                        <li>Newsletter</li>
+                        <li>LinkedIn</li>
+                    </ul>
+                </details>
+            </div>
+            <hr>
+            <div class="mobile-menu-btns">
+                <button class="btn outlined-menu">Login</button>
+                <button class="btn filled-menu">Sign up</button>
+            </div>
+            <a class="close-button" href="#">
+                <img src="images/icon-close.svg" alt="close" />
+            </a>
+        </div>
+        </dialog>
+
+        <div class="content" id="content">
             <h1>
                 A modern publishing platform
             </h1>
@@ -38,6 +82,7 @@
                 <button class="btn filled">Start for Free</button>
                 <button class="btn outlined">Learn More</button>
             </div>
+        </div>
         </div>
 
     </header>
@@ -89,7 +134,6 @@
     </div>
 
     <section class="integration">
-        <h1></h1>
         <img class="img1" src="images/illustration-editor-mobile.svg" alt="">
         <div class="outer">
             <div class="inner">
@@ -120,7 +164,6 @@
     </section>
 
     <footer class="about">
-
         <div class="left">
             <img src="./images/logo.svg" alt="logo">
         </div>
@@ -152,7 +195,7 @@
     </footer>
 
 
-    <!-- Product
+  <!-- Product
 
   Overview
   Pricing
