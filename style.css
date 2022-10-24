@@ -21,10 +21,11 @@ html {
 body{
     margin: 0;
     position: relative;
+    font-size: calc(0.6rem + 1vw);
 }
 
 .content h1{
-    margin-top: 4rem;
+    margin: 4rem 0.67rem 0.67rem;
     font-weight: 400;
 }
 
@@ -44,11 +45,11 @@ body{
     min-height: 100vh;
     background: no-repeat 45% 40% url(./images/bg-pattern-intro-mobile.svg),linear-gradient(hsl(13, 100%, 72%),hsl(353, 100%, 62%));
     background-size: 300%;
-    padding: 2rem 1rem;
+    padding: 2rem 1rem 3rem;
     border-bottom-left-radius: 120px;
     color: white;
     font-family: "Ubuntu",sans-serif;
-    padding-bottom: 3rem;
+    position: relative;
 }
 
 .btn{
@@ -62,6 +63,9 @@ body{
     cursor: pointer;
     font-family: "Ubuntu",sans-serif;
     font-weight: 600;
+    display: inline-block;
+    width: 10rem;
+    /*font-size: 4vw;*/
 }
 
 .btnrow{
@@ -80,12 +84,13 @@ body{
 }
 
 .p1{
-    margin-bottom: 3rem;
     font-family: "Overpass", sans-serif;
     opacity: 0.9;
+    /*font-size: 2.5vw;*/
+    margin: 1rem 1rem 3rem;
 }
 
-.integration,
+.section-integration,
 .features{
     margin-top: 3rem;
 }
@@ -96,9 +101,10 @@ body{
     align-items: center;
 }
 
-.integration h1{
+.section-integration h1{
     font-family: "Ubuntu",sans-serif;
     color: var(--dark-blue);
+    text-align: center;
 }
 
 
@@ -174,6 +180,7 @@ footer div{
     color: var(--grayish-blue);
     left:0;
     right : 0;
+    text-align: center;
 }
 
 .attribution a{

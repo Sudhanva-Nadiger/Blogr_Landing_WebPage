@@ -14,6 +14,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Sacramento&family=Ubuntu:wght@400;500;700&display=swap"
         rel="stylesheet">
+    <link href="screen.css" rel="stylesheet" />
     <title>Frontend Mentor | [Blogr]</title>
     <script src="index.js" defer></script>
 </head>
@@ -28,7 +29,6 @@
             </a>
         </nav>
 
-        <div class="modal-container">
         <dialog class="modal">
         <div class="mobile-menu">
             <div class="link-wrapper">
@@ -83,14 +83,19 @@
                 <button class="btn outlined">Learn More</button>
             </div>
         </div>
-        </div>
 
     </header>
 
 
-    <section class="integration">
+    <section class="section-integration">
         <h1 class="heading2">Designed for the future</h1>
-        <img class="img1" src="images/illustration-editor-mobile.svg" alt="DesktopImg">
+        <div class="integration">
+<!--        <picture>-->
+<!--            <source srcset="./images/illustration-editor-desktop.svg"-->
+<!--                    media="(min-width: 800px)">-->
+<!--            <img class="img1" src="images/illustration-editor-mobile.svg" alt="">-->
+<!--        </picture>-->
+            <img class="img1" src="images/illustration-editor-mobile.svg" alt="DesktopImg">
         <div class="outer">
             <div class="inner">
                 <h1>
@@ -117,6 +122,7 @@
                     control.
                 </p>
             </div>
+        </div>
         </div>
     </section>
 
