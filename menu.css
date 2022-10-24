@@ -71,6 +71,10 @@ dialog:not([open]) {
     background-image: linear-gradient( hsl(13, 100%, 72%),hsl(353, 100%, 62%));
 }
 
+body.modal-shown {
+    overflow-y: hidden;
+}
+
 summary {
     padding: 0.5rem;
     font-size: 1.2rem;
